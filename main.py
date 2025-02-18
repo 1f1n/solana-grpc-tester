@@ -36,12 +36,6 @@ grpcs = {
 benchmarkDuration = 5
 testAddress = ""
 
-# sample test addresses
-# raydium lp - 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8
-# okx dex agg - 6m2CDdhRgxpH4WjvdzxAYbGxwdGUz5MziiL5jek2kBma
-# trojan fees - 9yMwSPk9mrXSN7yDHUuZurAh1sjbJsfpUqjZ7SvVtdco
-# pumpfun - 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P
-
 grpcCount = len(grpcs)
 lock = threading.Lock()
 
