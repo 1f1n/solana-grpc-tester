@@ -9,7 +9,7 @@
 Setup
 </h1>
 
-`Edit main.py in an IDE of your choice, and enter your gRPC URLs from line 17 and onwards.`<br><br>
+`Edit main.py in an IDE of your choice, and enter your gRPC URLs from line 17 and onwards. Leave the "token" field blank if your gRPC doesn't require a token.`<br><br>
 `Select the duration for how long you want to test the gRPCs for. (seconds)`<br><br>
 `Enter the test address you want to stream the transactions from, here are some below: `<br><br>
 
