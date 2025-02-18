@@ -16,19 +16,11 @@ totalDetections = 0
 
 grpcs = {
     "node 1": {
-        "url": "http://va.rpc.orbitflare.com:10000",
+        "url": "",
         "grpcToken": ""
     },
     "node 2": {
-        "url": "http://la.rpc.orbitflare.com:10000",
-        "grpcToken": "" 
-    },
-    "node 3": {
-        "url": "http://slc.rpc.orbitflare.com:10000",
-        "grpcToken": "" 
-    },
-    "node 4": {
-        "url": "http://ny.rpc.orbitflare.com:10000",
+        "url": "",
         "grpcToken": "" 
     }
 }
