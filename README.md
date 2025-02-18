@@ -31,5 +31,5 @@ pip install -r requirements.txt
 `
 <br><br>
 `
-python dragon.py
+python main.py
 `
