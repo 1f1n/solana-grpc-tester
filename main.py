@@ -41,10 +41,13 @@ def subscribe(nodeName: str, nodeData: dict, subscription, nodeCount: int):
     token = nodeData.get("grpcToken", "")
 
     try:
-        if "https" in nodeUrl:
-            nodeUrl = nodeUrl.replace("https://", "http://")
-        host = nodeUrl.replace("http://", "")
-        channel = grpc.insecure_channel(host)
+        if nodeUrl.startswith("https://"):
+            host = nodeUrl[len("https://"):]
+            credentials = grpc.ssl_channel_credentials()
+            channel = grpc.secure_channel(host, credentials)
+        else:
+            host = nodeUrl[len("http://"):]
+            channel = grpc.insecure_channel(host)
         client = pb_pb2_grpc.GeyserStub(channel)
     except Exception as e:
         print(f"Failed to create gRPC client on {nodeName} ({nodeUrl}) - {e}")
