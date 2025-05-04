@@ -55,7 +55,7 @@ def subscribe(nodeName: str, nodeData: dict, subscription, nodeCount: int):
 
     try:
         if token:
-            stream = client.Subscribe(iter([subscription]), metadata=(("x-token", token)))
+            stream = client.Subscribe(iter([subscription]), metadata=[("x-token", token)])
         else:
             stream = client.Subscribe(iter([subscription]))
     except Exception as e:
